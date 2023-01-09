@@ -1,6 +1,14 @@
 .header {
     padding: 26px 0 23px 0;
     background: #001524;
+    z-index: 30;
+
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 
     @media screen and (max-width: 991.98px) {
         position: fixed;

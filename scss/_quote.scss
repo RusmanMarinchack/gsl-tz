@@ -90,6 +90,11 @@
             max-width: 100%;
         }
         // .texts__title
+
+        & ._icon-star {
+            display: block;
+            text-align: center;
+        }
     
         &__title {
             font-size: 60px;

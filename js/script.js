@@ -58,3 +58,35 @@ function scrollDown() {
 };
 
 scrollDown();
+
+// 
+
+function srcrollHeader() {
+    window.addEventListener('scroll', function() {
+        if(window.matchMedia("(max-width: 991.98px)").matches === false) {
+            let home = document.querySelector('.home');
+            let homeHeight = home.clientHeight;
+            let header = document.querySelector('.header');
+            let headerHeight = header.clientHeight;
+            let headerFixed = homeHeight + headerHeight;
+
+            console.log(headerFixed)
+    
+            if(header) {
+                if(window.scrollY >= headerFixed) {
+                    header.classList.add('active');
+                    home.style.marginTop = `${headerHeight}px`;
+                } else {
+                    header.classList.remove('active');
+                    home.style.marginTop = `0px`;
+                }
+
+                // if() {
+
+                // }
+            };
+        };
+    });
+};
+
+srcrollHeader()

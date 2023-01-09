@@ -40,6 +40,14 @@ body {
 .main .header {
   padding: 26px 0 23px 0;
   background: #001524;
+  z-index: 30;
+}
+
+.main .header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -532,6 +540,11 @@ body {
   .main .quote .texts {
     max-width: 100%;
   }
+}
+
+.main .quote .texts ._icon-star {
+  display: block;
+  text-align: center;
 }
 
 .main .quote .texts__title {
