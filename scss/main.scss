@@ -1,0 +1,38 @@
+@import './font';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Yantramanav-Bold', sans-serif;
+    font-size: 18px;
+}
+
+._container {
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+._black {
+    color: #000;
+}
+
+._yellow {
+    color: #FDC200;
+}
+
+.main {
+    @import './header';
+    @import './home';
+    @import './subbaner';
+    @import './quote';
+}

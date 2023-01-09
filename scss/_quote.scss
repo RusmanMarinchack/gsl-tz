@@ -1,0 +1,142 @@
+.quote {
+    height: 100vh;
+    min-height: 800px;
+    background: #FDC200;
+
+    @media screen and (max-width: 991.98px) {
+        height: auto;
+        padding: 50px 0;
+        padding-top: 100px;
+    }
+
+    // .quote__container
+
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    // .quote__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: end;
+
+        @media screen and (max-width: 991.98px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // .quote__director
+
+    .director {
+        position: relative;
+        margin-right: 90px;
+        text-align: center;
+        color: #001524;
+
+        @media screen and (max-width: 991.98px) {
+            margin-right: 0px;
+        }
+
+        // .director__decor
+    
+        &__decor {
+            max-width: 135px;
+            width: 100%;
+            position: absolute;
+            top: -65px;
+            right: -40px;
+        }
+    
+        // .director__image
+    
+        &__image {
+            width: 260px;
+            margin-bottom: 23px;
+            position: relative;
+            z-index: 1;
+        }
+    
+        // .director__name
+    
+        &__name {
+            font-weight: bold;
+        }
+    
+        // .director__list
+    
+        &__list {
+            list-style: none;
+        }
+    
+        // .director__item
+    
+        &__item {
+            font-size: 16px;
+        }
+    }
+
+    // .quote__texts
+
+    .texts {
+        max-width: 835px;
+        width: 100%;
+
+        @media screen and (max-width: 991.98px) {
+            max-width: 100%;
+        }
+        // .texts__title
+    
+        &__title {
+            font-size: 60px;
+            font-weight: 700;
+            color: #133D60;
+        }
+
+        & p {
+            font-size: 20px;
+            color: #001524;
+            margin-bottom: 30px;
+        }
+    
+        // .texts__btn
+    
+        &__btn {
+            display: flex;
+            align-items: center;
+            max-width: 365px;
+            width: 100%;
+            background: #133D60;
+            border-radius: 30px;    
+            padding: 15px 20px;
+            font-size: 20px;    
+            font-weight: 500;
+            line-height: 25px;
+            color: #fff;
+            border: none;
+            transform: all 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            @media screen and (max-width: 575.98px) {
+                 max-width: 100%;
+                 justify-content: center;
+            }
+
+            & span {
+                display: block;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+

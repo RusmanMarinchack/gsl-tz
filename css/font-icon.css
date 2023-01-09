@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot?jgkqoc");
+  src: url("../fonts/icons.eot?jgkqoc#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?jgkqoc") format("truetype"), url("../fonts/icons.woff?jgkqoc") format("woff"), url("../fonts/icons.svg?jgkqoc#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-dashicons_arrow-down-alt2:before {
+  content: "\e900";
+  color: #fff;
+}
+
+._icon-play-btn:before {
+  content: "\e901";
+  color: #fff;
+}
+
+._icon-star:before {
+  content: "\e903";
+  color: #fff;
+}
+/*# sourceMappingURL=font-icon.css.map */
